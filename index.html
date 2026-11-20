@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore saree styles at Shree Swami Samarth Seasons Shoppy." />
+  <title>Shree Swami Samarth Seasons Shoppy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topline">A celebration of timeless Indian drapes</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Shree Swami Samarth Seasons Shoppy home">
+      <span class="brand-mark">✦</span>
+      <span class="brand-name">SHREE SWAMI SAMARTH <small>SEASONS SHOPPY</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-link" href="#collections">Explore <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE ART OF EVERY DRAPE</p>
+        <h1>Elegance that<br><em>glows</em> forever.</h1>
+        <p class="hero-description">Discover statement sarees, timeless classics and fresh trends — all in one place.</p>
+        <a class="gold-button" href="#collections">Explore the collection <span>→</span></a>
+        <div class="hero-note"><span class="spark">✧</span> Curated styles • Beautiful details • Your signature look</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-frame">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1100&q=85" alt="Elegant Indian traditional outfit" />
+        </div>
+        <div class="hero-stamp">TRADITION<br><b>MEETS</b><br>TREND</div>
+        <div class="hero-orbit"></div>
+      </div>
+    </section>
+
+    <section class="collection-section" id="collections">
+      <div class="section-heading">
+        <p class="eyebrow">FIND YOUR SIGNATURE DRAPE</p>
+        <h2>Explore <em>Collections</em></h2>
+        <p>Search by saree style, fabric, colour or design.</p>
+      </div>
+
+      <div class="search-panel">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="Try “jacket saree”, “pink”, “silk”, “floral”..." autocomplete="off" aria-label="Search saree designs">
+        <button id="clearSearch" class="clear-search" type="button" aria-label="Clear search">×</button>
+      </div>
+
+      <div class="filter-row" id="categoryFilters" aria-label="Filter sarees by category">
+        <button class="filter-chip active" data-category="All">All styles</button>
+        <button class="filter-chip" data-category="Jacket Saree">Jacket</button>
+        <button class="filter-chip" data-category="Poncho Saree">Poncho</button>
+        <button class="filter-chip" data-category="Net Saree">Net</button>
+        <button class="filter-chip" data-category="Silk Saree">Silk</button>
+        <button class="filter-chip" data-category="Trendy Saree">Trendy</button>
+        <button class="filter-chip" data-category="Kathpadar Saree">Kathpadar</button>
+        <button class="filter-chip" data-category="Paithani Saree">Paithani</button>
+        <button class="filter-chip" data-category="Organza Saree">Organza</button>
+        <button class="filter-chip" data-category="Ready-to-Wear Saree">Ready-to-wear</button>
+      </div>
+
+      <div class="results-line"><span id="resultCount">12 styles</span><span>All looks styled with pack-neck blouse inspiration</span></div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="no-results" id="noResults" hidden>No matching saree designs found. Try another style, colour or fabric.</p>
+    </section>
+
+    <section class="blouse-note" id="about">
+      <div class="note-symbol">✧</div>
+      <div>
+        <p class="eyebrow">A SIGNATURE DETAIL</p>
+        <h2>One graceful <em>blouse style.</em></h2>
+        <p>Our saree style inspiration keeps a pack-neck / high-neck blouse look across the collection. Product images and actual blouse details may vary by the item added to the catalogue.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+      <h2>Find a drape that feels <em>like you.</em></h2>
+      <p>Have a design in mind? Contact the shop to ask about availability and details.</p>
+      <a class="gold-button" href="https://wa.me/" target="_blank" rel="noopener">Contact on WhatsApp <span>↗</span></a>
+      <small class="whatsapp-hint">Add the shop's WhatsApp number to the link in index.html before publishing.</small>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="#">SHREE SWAMI SAMARTH <span>SEASONS SHOPPY</span></a>
+    <p>Elegance • Tradition • Style</p>
+    <small>© <span id="year"></span> Shree Swami Samarth Seasons Shoppy</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
